@@ -20,6 +20,10 @@ var rocketsJersey;
 
 var okcJersey;
 
+var jerseyXPosition = -600;
+
+var imageXPosition= -1000;
+
 
 var okc = document.querySelector('#okc');
 var hou = document.querySelector('#hou');
@@ -27,21 +31,29 @@ var gsw = document.querySelector('#gsw');
 var cavs = document.querySelector('#cavs');
 
 okc.addEventListener("click", function(){
+	jerseyXPosition = -600;
+	imageXPosition= -1000;
 	currentJersey = okcJersey;
 	currentImage = okcImage;
 });
 
 gsw.addEventListener("click", function(){
+	jerseyXPosition = -600;
+	imageXPosition= -1000;
 	currentJersey = warsJersey;
 	currentImage = warsImage;
 });
 
 cavs.addEventListener("click", function(){
+	jerseyXPosition = -600;
+	imageXPosition= -1000;
 	currentJersey = cavsJersey;
 	currentImage = cavsImage;
 });
 
 hou.addEventListener("click", function(){
+	jerseyXPosition = -600;
+	imageXPosition= -1000;
 	currentJersey = rocketsJersey;
 	currentImage = rocketsImage;
 });
@@ -67,9 +79,17 @@ function setup() {
 
 function draw() {
   background(255);
-  image(currentImage, 0, 0);
+
+  if(imageXPosition < 0){
+  	imageXPosition += 20;
+  }
+  image(currentImage, imageXPosition, 0);
   image(capture, 0,0);
-  image(currentJersey, 260, 370, 500, 700);
+  if(jerseyXPosition < 260){
+  	jerseyXPosition += 20;
+  }
+
+  image(currentJersey, jerseyXPosition, 370, 500, 700);
 }
 
 function keyPressed(){
