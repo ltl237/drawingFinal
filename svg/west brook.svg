@@ -4,64 +4,63 @@
     <title>west brook</title>
     <desc>Created with Sketch.</desc>
     <defs>
-            <style>
-                @keyframes mouth {
-                    100%{
-                        transform:rotateX(180deg);
-                    }
+        <style>
+            @keyframes mouth {
+                100%{
+                    transform:rotateX(180deg);
                 }
+            }
 
-                @keyframes moveRight {
+            @keyframes moveRight {
 
-                    100%{
-                        transform:rotate(-45deg);
-
-                    }
-                }
-
-                @keyframes moveLeft {
-                    0%{
-                        transform-origin:right;
-                        transform:rotate(0deg) scaleY(-1);
-
-                    }
-                    100%{
-                        transform-origin:right;
-                        transform:rotate(45deg) scaleY(-1);
-                    }
-                }
-
-                #armRight{
-                        animation-fill-mode:forwards;
-                        transform-origin:left;
-                        animation-name:moveRight;
-                        animation-duration:1.5s;
-
-
+                100%{
+                    transform:rotate(-45deg);
 
                 }
+            }
 
-                #lebron #armleft {
-                    transform-origin:center;
-                    transform:scaleX(-1) translateX(-15px);
-                    
-                }
-
-                #armLeft {
-                    animation-fill-mode:forwards;
+            @keyframes moveLeft {
+                0%{
                     transform-origin:right;
-                    animation-name:moveLeft;
-                    animation-duration:1.5s;
-
+                    transform:rotate(0deg) scaleY(-1);
 
                 }
+                100%{
+                    transform-origin:right;
+                    transform:rotate(45deg) scaleY(-1);
+                }
+            }
 
-                #mouth {
+            #armRight{
                     animation-fill-mode:forwards;
-                    transform-origin:center;
-    <!--                 animation-name:mouth;
-                    animation-duration:2s; -->
-                }
+                    transform-origin:left;
+                    animation-name:moveRight;
+                    animation-duration:1.5s;
+                    animation-delay:0.5s;
+
+
+
+
+            }
+
+
+            #armLeft {
+                animation-fill-mode:forwards;
+                transform-origin:right;
+                animation-name:moveLeft;
+                animation-duration:1.5s;
+                animation-delay:0.5s;
+
+
+
+            }
+
+            .mouth {
+                animation-fill-mode:forwards;
+                transform-origin:center;
+<!--                 animation-name:mouth;
+                animation-duration:2s; -->
+            }
 
         </style>
     </defs>
@@ -81,7 +80,7 @@
             </g>
             <rect id="Rectangle-5" fill="#390303" x="128" y="46" width="12" height="12" rx="6"></rect>
             <rect id="Rectangle-5" fill="#390303" x="177" y="46" width="12" height="12" rx="6"></rect>
-            <path d="M159,97.6700001 C175.568542,97.6700001 189,91.6775042 189,84.2853859 C189,76.8932676 175.568542,84.2853859 159,84.2853859 C142.431458,84.2853859 129,76.8932676 129,84.2853859 C129,91.6775042 142.431458,97.6700001 159,97.6700001 Z" id="mouth" stroke="#979797" fill="#FDFCFC"></path>
+            <path d="M159,97.6700001 C175.568542,97.6700001 189,91.6775042 189,84.2853859 C189,76.8932676 175.568542,84.2853859 159,84.2853859 C142.431458,84.2853859 129,76.8932676 129,84.2853859 C129,91.6775042 142.431458,97.6700001 159,97.6700001 Z" class="mouth" stroke="#979797" fill="#FDFCFC"></path>
             <use id="Rectangle-6" stroke="#0A2146" mask="url(#mask-2)" stroke-width="8" fill="#2196F3" xlink:href="#path-1"></use>
             <path d="M214.780987,120.130777 C227.537127,117.879694 253.055552,117.880778 275.375722,118.444091 C297.674404,119.006861 316.780987,120.130777 316.780987,120.130777 L316.780987,138.130777 C316.780987,138.130777 297.412456,133.538489 288.111743,133.538489 C278.811029,133.538489 214.780987,138.130777 214.780987,138.130777 C214.780987,138.130777 189.280987,124.630777 214.780987,120.130777 Z" id="armRight" fill="#905539" ></path>
             <path d="M11.7809866,120.130777 C24.5371271,117.879694 50.0555518,117.880778 72.3757223,118.444091 C94.6744038,119.006861 113.780987,120.130777 113.780987,120.130777 L113.780987,138.130777 C113.780987,138.130777 94.4124562,133.538489 85.1117428,133.538489 C75.8110293,133.538489 11.7809866,138.130777 11.7809866,138.130777 C11.7809866,138.130777 -13.7190134,124.630777 11.7809866,120.130777 Z" id="armLeft" fill="#905539" ></path>

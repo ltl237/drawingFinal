@@ -1,0 +1,176 @@
+h1 {
+	text-align:center;
+	font-family: 'Bungee Inline', cursive;
+}
+
+@keyframes jump {
+	0% {
+		transform:translateY(0px);
+	}
+
+	50% {
+		transform:translateY(-35px);
+	}
+
+	100% {
+		transform:translateY(0px);
+	}
+
+}
+
+embed:hover {
+	animation: jump 1s infinite;
+}
+
+@keyframes metricsBar {
+	0% {
+		height:25px;
+		width:0px;
+	}
+
+	100% {
+		height:25px;
+		width:150px;
+	}
+}
+
+@keyframes curryThree {
+	0% {
+		height:25px;
+		width:0px;
+	}
+
+	100% {
+		height:25px;
+		width:94.5px;
+	}
+}
+
+@keyframes lebronAst{
+	0% {
+		height:25px;
+		width:0px;
+	}
+
+	100% {
+		height:25px;
+		width:75px;
+	}
+}
+
+.player embed {
+	margin-left:70px;
+}
+
+.player h2 {
+	text-align:center;
+	/*margin-left:45px;*/
+} 
+
+
+#players {
+	max-width: 100%
+}
+
+body{
+	background-image: url("team-photos/first-page-back.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#players .player {
+	display:inline-block;
+	min-width: 350px;
+	text-align: left
+	margin:30px;
+}
+
+.stat {
+	text-align:left;
+	display:block;
+}
+
+#container {
+	font-family: 'Roboto';
+	position:relative;
+	margin-top:150px;
+	left:50%;
+	margin-left:-500px;
+	clear:both;
+}
+
+.stat p {
+	float:left;
+	display:inline;
+	margin:0;
+	margin-right:20px;
+
+}
+
+.stat > div > div{
+	float:left;
+	position:relative;
+	right:0px;
+	display:inline-block;
+	background-color:#E35C1E;
+	border-radius:20px;
+
+}
+
+.stat > div {
+	border:0.5px solid #E35C1E;
+	display:inline-block;
+	height:25px;
+	width:150px;
+	border-radius:20px;
+}
+
+.stat:hover {
+	transition: transform 0.5s;
+	transform: scale(1.1,1.1);
+}
+
+.stat div div p {
+	margin-left: 100px;
+	margin-top:5px;
+}
+
+.score {
+	margin-left:20%;
+	color:white;
+	margin-top:15%;
+}
+
+#per {
+	margin-left:-4%;
+}
+
+#curry-pts {
+	animation:metricsBar 2s forwards;
+}
+
+#curry-three {
+	animation:curryThree 2s forwards;
+}
+
+#russel-pts {
+	animation:metricsBar 2s forwards;
+}
+
+#russel-ast {
+	animation:metricsBar 2s forwards;
+}
+
+#lebron-pts {
+	animation:metricsBar 2s forwards;
+}
+
+#lebron-ast {
+	animation:lebronAst 2s forwards;
+}
+
+	@keyframes mouth {
+    100%{
+        transform:rotateX(180deg);
+    }
+}

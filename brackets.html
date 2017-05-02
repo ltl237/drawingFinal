@@ -10,7 +10,7 @@
 	<h1>NBA Play-Offs 2017</h1>
 	<div id="container">
 		<div class="round">
-			<div class="score-team">
+			<div id="gsw" class="score-team">
 				<div class="away-team winning">
 					<img src="team-photos/warriors.png" width="40px" height="40px">
 					<p>GSW</p>
@@ -22,7 +22,7 @@
 					<b><p>0</p></b>
 				</div>
 			</div>
-			<div class="score-team">
+			<div id="uta" class="score-team">
 				<div class="away-team losing">
 					<img src="team-photos/clippers.png" width="40px" height="40px">
 					<p>LAC</p>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 
-			<div class="score-team">
+			<div id="hou" class="score-team">
 				<div class="away-team winning">
 					<img src="team-photos/rockets.png" width="40px" height="45px">
 					<p>HOU</p>
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 
-			<div class="score-team">
+			<div id="sas" class="score-team">
 				<div class="away-team winning">
 					<img src="team-photos/spurs.png" width="40px" height="40px">
 					<p>SAS</p>
@@ -92,6 +92,12 @@
 			<div class="score-team">
 				<div class="away-team"></div>
 				<div class="home-team"></div>
+			</div>
+		</div>
+
+		<div class="round final">
+			<div class="score-team">
+				<img src="team-photos/nba-trophy.png" width="200px" height="300px">
 			</div>
 		</div>
 
@@ -178,9 +184,8 @@
 			</div>
 		</div>
 
-		<div id="matches">
-			
-		</div>
+		<div id="matches"></div>
 	</div>
+	<script type="text/javascript" src="js/brackets.js"></script>
 </body>
 </html>

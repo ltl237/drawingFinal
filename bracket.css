@@ -3,11 +3,14 @@
 	top:50%;
 	left:50%;
 	margin-top: -300px;
-    margin-left: -600px;
+    margin-left: -710px;
     font-family: 'Roboto';
 
 }
 
+.final img {
+	transform:translateY(-150px);
+}
 
 h1 {
 	text-align:center;
@@ -17,7 +20,8 @@ h1 {
 body {
 	background-image: url("team-photos/flat-background.jpg");
 /*    background-size: 100% 100%;*/
-    background-repeat:no-repeat;
+    background-repeat:repeat;
+    background-size: cover;
 
 }
 
@@ -155,21 +159,131 @@ body {
 .home-team.winning {
 	animation: hometeamWinning 1s;
 	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
 }
 
 .away-team.winning {
 	animation: awayteamWinning 1s;	
 	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
 }
 
 .home-team.losing {
 	animation: hometeamLosing 0.75s;
 	animation-fill-mode: forwards;
-	animation-delay: 0.85s;
+	animation-delay: 1.35s;
 }
 
 .away-team.losing {
 	animation: awayteamLosing 0.75s;	
 	animation-fill-mode: forwards;
-	animation-delay: 0.85s;
+	animation-delay: 1.35s;
+}
+
+#matches {
+	margin-top:5%;
+	margin-bottom:10%;
+}
+
+#matches > div {
+	position:relative;
+	left:50%;
+	margin-left:-160px;
+}
+
+
+#matches .away-team {
+	display:inline-block;
+	margin:5px;
+}
+
+#matches .home-team {
+	display:inline-block;
+	margin:5px;
+}
+
+.away-team.match-win{
+	animation:awayMWinner 1s; 
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+
+.home-team.match-win{
+	animation:homeMWinner 1s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+.away-team.match-lose{
+	animation:awayMLoser 1s;
+	animation-delay:2.7s;
+	animation-fill-mode: forwards;
+}
+
+.home-team.match-lose{
+	animation:homeMLoser 1s;
+	animation-delay:2.7s;
+	animation-fill-mode: forwards;
+
+}
+
+
+#matches h2 {
+	text-align:center;
+}
+
+#matches h3 {
+	text-align:center;
+}
+
+@keyframes awayMWinner {
+	0%{
+		transform: translateX(0px);
+	}
+
+	50%{
+		transform: translateX(-30px);
+
+	}
+
+	100%{
+		transform: translateX(20px) scale(1.2,1.2);
+	}
+}
+
+@keyframes homeMLoser {
+	0%{
+		opacity:1;
+		transform:translateX(0px);
+	}
+
+	100%{
+		opacity:0.5;
+		transform:translateX(40px);
+	}
+}
+
+@keyframes awayMLoser {
+	0%{
+		opacity:1;
+		transform:translateX(0px);
+	}
+
+	100%{
+		opacity:0.5;
+		transform:translateX(-40px);
+	}
+}
+
+@keyframes homeMWinner{
+	0%{
+		transform:translateX(0px);
+	}
+
+	50%{
+		transform: translateX(30px);
+	}
+
+	100%{
+		transform: translateX(-20px) scale(1.2,1.2);
+	}
 }
