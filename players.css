@@ -18,7 +18,11 @@ h1 {
 
 }
 
-embed:hover {
+/*embed:hover {
+	animation: jump 1s infinite;
+}*/
+
+.player-image:hover {
 	animation: jump 1s infinite;
 }
 
@@ -60,6 +64,7 @@ embed:hover {
 
 .player embed {
 	margin-left:70px;
+	margin-top:-45px;
 }
 
 .player h2 {
@@ -93,9 +98,9 @@ body{
 #container {
 	font-family: 'Roboto';
 	position:relative;
-	margin-top:150px;
+	margin-top:100px;
 	left:50%;
-	margin-left:-500px;
+	margin-left:-520px;
 	clear:both;
 }
 
@@ -136,14 +141,10 @@ body{
 }
 
 .score {
-	margin-left:20%;
+	margin-left:30%;
 	color:white;
-	margin-top:15%;
 }
 
-#per {
-	margin-left:-4%;
-}
 
 #curry-pts {
 	animation:metricsBar 2s forwards;
@@ -169,8 +170,45 @@ body{
 	animation:lebronAst 2s forwards;
 }
 
-	@keyframes mouth {
+@keyframes mouth {
     100%{
         transform:rotateX(180deg);
     }
+}
+
+@keyframes visible {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes notvisible {
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity:0;
+	}
+}
+
+.weather {
+	margin-left:70px;
+	display:block;
+	opacity:0;
+	margin-top:-50px;
+}
+
+.player > div{
+	position:relative;
+	height:200px;
+	width:200px;
+}
+
+.player > div img {
+	position:absolute;
 }

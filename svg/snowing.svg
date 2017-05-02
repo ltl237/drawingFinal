@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="476px" height="227px" viewBox="0 0 476 227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>snowing</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style>
+            @keyframes snowing {
+                0% {
+                    transform:translateY(-50px);
+                    opacity:1;
+                }
+
+                70%{
+                    opacity:0.8
+                }
+
+                100%{
+                    transform:translateY(50px);
+                    opacity:0;
+                }
+            }
+
+            #snow-1{
+                transform:translateY(-50px);
+                animation:snowing 2s infinite;
+
+            }
+
+            #snow-2{
+                transform:translateY(-50px);
+                animation:snowing 2s infinite;
+                animation-delay:0.3s;
+            }
+
+            #snow-3{
+             transform:translateY(-50px);
+                animation:snowing 2s infinite;
+                animation-delay:0.7s;
+            }
+
+            #snow-4{
+                transform:translateY(-50px);
+                animation:snowing 2s infinite;
+                animation-delay:1.0s;
+            }
+        </style>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-111.000000, -272.000000)">
+            <g id="snowing" transform="translate(112.000000, 273.000000)">
+                <path d="M187.947086,25.3976275 C180.256653,10.3229766 164.583857,0 146.5,0 C133.851806,0 122.383072,5.04986585 114,13.2433949 C105.616928,5.04986585 94.1481936,0 81.5,0 C55.8187591,0 35,20.8187591 35,46.5 C35,46.8109375 35.0030519,47.1211621 35.0091274,47.4306457 C14.8853314,52.545855 0,70.7845998 0,92.5 C0,118.181241 20.8187591,139 46.5,139 C54.4619974,139 61.9566149,136.998909 68.5083534,133.472225 C76.3508921,148.072725 91.7661264,158 109.5,158 C127.583857,158 143.256653,147.677023 150.947086,132.602373 C157.854627,136.668068 165.904988,139 174.5,139 C193.337355,139 209.558542,127.798848 216.866418,111.693684 C240.019906,109.033066 258,89.3662708 258,65.5 C258,39.8187591 237.181241,19 211.5,19 C202.904988,19 194.854627,21.3319318 187.947086,25.3976275 Z" id="left-cloud" stroke="#D8D8D8" fill="#DCDCE7"></path>
+                <path d="M403.947086,25.3976275 C396.256653,10.3229766 380.583857,0 362.5,0 C349.851806,0 338.383072,5.04986585 330,13.2433949 C321.616928,5.04986585 310.148194,0 297.5,0 C271.818759,0 251,20.8187591 251,46.5 C251,46.8109375 251.003052,47.1211621 251.009127,47.4306457 C230.885331,52.545855 216,70.7845998 216,92.5 C216,118.181241 236.818759,139 262.5,139 C270.461997,139 277.956615,136.998909 284.508353,133.472225 C292.350892,148.072725 307.766126,158 325.5,158 C343.583857,158 359.256653,147.677023 366.947086,132.602373 C373.854627,136.668068 381.904988,139 390.5,139 C409.337355,139 425.558542,127.798848 432.866418,111.693684 C456.019906,109.033066 474,89.3662708 474,65.5 C474,39.8187591 453.181241,19 427.5,19 C418.904988,19 410.854627,21.3319318 403.947086,25.3976275 Z" id="right-cloud" stroke="#D8D8D8" fill="#DCDCE7"></path>
+                <circle id="snow-1" fill="#F4F4F4" cx="88" cy="215" r="11"></circle>
+                <circle id="snow-2" fill="#F4F4F4" cx="179" cy="169" r="11"></circle>
+                <circle id="snow-3" fill="#F4F4F4" cx="316" cy="215" r="11"></circle>
+                <circle id="snow-4" fill="#F4F4F4" cx="413" cy="191" r="11"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

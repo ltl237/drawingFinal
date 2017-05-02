@@ -72,7 +72,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="lebron" transform="translate(0.000000, 1.000000)">
-            <circle id="Oval-2" stroke="#979797" fill="#290707" cx="159.5" cy="58.5" r="58.5"></circle>
+            <circle id="Oval-2" fill="#290707" cx="159.5" cy="58.5" r="58.5"></circle>
             <g id="Group" transform="translate(103.000000, 24.000000)">
                 <path d="M112.640768,51 C105.517905,75.274628 83.0789438,93 56.5,93 C29.9210562,93 7.4820948,75.274628 0.359231768,51 L10,51 L10,-4.4408921e-15 L101,-7.10542736e-15 L101,51 L112.640768,51 Z" id="Combined-Shape" fill="#5E2A10"></path>
                 <rect id="Rectangle" fill="#4A1C1C" x="17" y="10" width="29" height="9"></rect>
