@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="317px" height="255px" viewBox="0 0 317 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>steph curry</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style>
+            @keyframes moveRight {
+
+                100%{
+                    transform:rotate(-45deg);
+
+                }
+            }
+
+            @keyframes moveLeft {
+                0%{
+                    transform-origin:right;
+                    transform:rotate(0deg) scaleY(-1);
+
+                }
+                100%{
+                    transform-origin:right;
+                    transform:rotate(45deg) scaleY(-1);
+                }
+            }
+
+            #armright{
+                animation-fill-mode:forwards;
+                transform-origin:left;
+                animation-name:moveRight;
+                animation-duration:1.5s;
+
+
+
+            }
+
+            #lebron #armleft {
+                transform-origin:center;
+                transform:scaleX(-1) translateX(-15px);
+                
+            }
+
+            #armleft {
+                animation-fill-mode:forwards;
+                transform-origin:right;
+                animation-name:moveLeft;
+                animation-duration:1.5s;
+
+
+            }
+
+            #mouth {
+                transform-origin:center;
+                transform:rotate(180deg);
+            }
+
+        </style>
+    </defs>
+    <defs>
+        <path d="M110.742188,106 C110.742188,106 144.02474,124.933594 159.804687,124.933594 C175.584635,124.933594 206.46875,106 206.46875,106 L221,254 L98.609375,254 L110.742188,106 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="122.390625" height="148" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="steph-curry" transform="translate(0.000000, 1.000000)">
+            <circle id="Oval-2" stroke="#979797" fill="#4A1C1C" cx="159.5" cy="58.5" r="58.5"></circle>
+            <g id="Group" transform="translate(103.000000, 24.000000)">
+                <path d="M112.640768,51 C105.517905,75.274628 83.0789438,93 56.5,93 C29.9210562,93 7.4820948,75.274628 0.359231768,51 L10,51 L10,3.55271368e-15 L101,3.55271368e-15 L101,51 L112.640768,51 Z" id="Combined-Shape" fill="#E0A88D"></path>
+                <rect id="Rectangle" fill="#4A1C1C" x="17" y="10" width="29" height="9"></rect>
+                <rect id="Rectangle-2" fill="#4A1C1C" x="64" y="10" width="31" height="9"></rect>
+            </g>
+            <rect id="Rectangle-5" fill="#390303" x="128" y="46" width="12" height="12" rx="6"></rect>
+            <rect id="Rectangle-5" fill="#390303" x="177" y="46" width="12" height="12" rx="6"></rect>
+            <path d="M159,97.6700001 C175.568542,97.6700001 189,91.6775042 189,84.2853859 C189,76.8932676 175.568542,84.2853859 159,84.2853859 C142.431458,84.2853859 129,76.8932676 129,84.2853859 C129,91.6775042 142.431458,97.6700001 159,97.6700001 Z" id="Oval-3" stroke="#979797" fill="#FDFCFC"></path>
+            <use id="Rectangle-6" stroke="#2196F3" mask="url(#mask-2)" stroke-width="8" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <image id="Bitmap" x="135" y="149" width="50" height="61.097852" xlink:href="warriors.png"></image>
+            <path d="M214.780987,120.130777 C227.537127,117.879694 253.055552,117.880778 275.375722,118.444091 C297.674404,119.006861 316.780987,120.130777 316.780987,120.130777 L316.780987,138.130777 C316.780987,138.130777 297.412456,133.538489 288.111743,133.538489 C278.811029,133.538489 214.780987,138.130777 214.780987,138.130777 C214.780987,138.130777 189.280987,124.630777 214.780987,120.130777 Z" id="armright" fill="#E0A88D" ></path>
+            <path d="M11.7809866,120.130777 C24.5371271,117.879694 50.0555518,117.880778 72.3757223,118.444091 C94.6744038,119.006861 113.780987,120.130777 113.780987,120.130777 L113.780987,138.130777 C113.780987,138.130777 94.4124562,133.538489 85.1117428,133.538489 C75.8110293,133.538489 11.7809866,138.130777 11.7809866,138.130777 C11.7809866,138.130777 -13.7190134,124.630777 11.7809866,120.130777 Z" id="armleft" fill="#E0A88D" ></path>
+        </g>
+    </g>
+</svg>

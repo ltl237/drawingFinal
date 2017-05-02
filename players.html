@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project: Page 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<style type="text/css">
+
+		h1 {
+			text-align:center;
+			font-family: 'Bungee Inline', cursive;
+		}
+
+		@keyframes jump {
+			0% {
+				transform:translateY(0px);
+			}
+
+			50% {
+				transform:translateY(-35px);
+			}
+
+			100% {
+				transform:translateY(0px);
+			}
+
+		}
+
+		embed:hover {
+			animation: jump 1s infinite;
+		}
+
+		@keyframes metricsBar {
+			0% {
+				height:25px;
+				width:0px;
+			}
+
+			100% {
+				height:25px;
+				width:150px;
+			}
+		}
+
+		.player embed {
+			margin-left:70px;
+		}
+
+		.player h2 {
+			text-align:center;
+			/*margin-left:45px;*/
+		} 
+
+
+		#players {
+			max-width: 100%
+		}
+
+		body{
+			background-image: url("team-photos/first-page-back.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#players .player {
+			display:inline-block;
+			min-width: 350px;
+			text-align: left
+			margin:30px;
+		}
+
+		table, th, td {
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+
+		table {
+			margin:20px;
+		}
+
+		th {
+			padding:10px;
+		}
+
+		.stat {
+			text-align:left;
+			display:block;
+		}
+
+		#container {
+			font-family: 'Roboto';
+			position:relative;
+			margin-top:150px;
+			left:50%;
+			margin-left:-500px;
+			clear:both;
+		}
+
+		.stat p {
+			float:left;
+			display:inline;
+			margin:0;
+			margin-right:20px;
+		
+		}
+
+		.stat > div > div{
+			float:left;
+			position:relative;
+			right:0px;
+			display:inline-block;
+			animation:metricsBar 3s forwards;
+			background-color:orange;
+
+		}
+
+		.stat > div {
+			border: solid 1px black;
+			display:inline-block;
+			height:25px;
+			width:150px;
+		}
+
+		.stat:hover {
+			transition: transform 0.5s;
+			transform: scale(1.2,1.2);
+		}
+
+		.stat div div p {
+			margin-left: 100px;
+			margin-top:5px;
+		}
+
+		.score {
+			margin-left:20%;
+			color:white;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>NBA Play-Offs 2017</h1>
+	<div id="container">
+		<div id="players">
+			<div class="player">
+				<h2>Steph Curry</h2>
+				<embed src="steph curry.svg". width="200" height="200">
+				<div class="score">
+					<div class="stat">
+						<p>PTS</p>
+						<div>
+							<div>
+								<p>37</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>FG%</p>
+						<div>
+							<div>
+								<p>60%<p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>3PT%</p>
+						<div>
+							<div>
+								<p>63%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="player">
+				<h2>Russel Westbrook</h2>
+				<embed src="west brook.svg". width="200" height="200">
+				<div class="score">
+					<div class="stat">
+						<p>PTS</p>
+						<div>
+							<div>
+								<p>47</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>FG%</p>
+						<div>
+							<div>
+								<p>44%</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>AST</p>
+						<div>
+							<div>
+								<p>9</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="player">
+				<h2>Lebron James</h2>
+				<embed src="lebron.svg". width="200" height="200">
+				<div class="score">
+					<div class="stat">
+						<p>PTS</p>
+						<div>
+							<div>
+								<p>33</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>FG%</p>
+						<div>
+							<div>
+								<p>52%</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat">
+						<p>AST</p>
+						<div>
+							<div>
+								<p>4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>
